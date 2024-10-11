@@ -3,13 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Page</title>
+    <title>Product Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to my first page!</h1>
-    <h2>احب نور </h2>
-    <P>
-     عمي سامي الحنون الشويس 
-    </P>
+    <header>
+        <h1>Product Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="add-product">
+            <h2>Add a New Product</h2>
+            <form id="product-form">
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <textarea id="product-description" placeholder="Product Description" required></textarea>
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+
+        <section id="product-list">
+            <h2>Product List</h2>
+            <div id="products"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 My Product Store</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
